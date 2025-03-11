@@ -23,3 +23,52 @@ def main():
 
 if __name__=='__main__': 
     main()
+
+
+
+
+
+
+
+
+
+
+import math
+
+def mediana_de_tres(a, b, c):
+    return sorted([a, b, c])
+
+def main():
+    a, b, c = 3, 7, 5
+    print(f" La mediana de {a}, {b}, {c}: {mediana_de_tres(a, b, c)}")
+    print('Result = 5')
+
+if __name__=='__main__': 
+    main()
+
+
+
+
+
+
+
+
+def centrar_cadena(cadena, ancho):
+    espacios = (ancho - len(cadena)) // 2
+    return " " * espacios + cadena
+
+def capitalizar_cadena(texto):
+    return texto.capitalize()
+
+def es_entero(cadena):
+    return cadena.isdigit() or (cadena.startswith('-') and cadena[1:].isdigit())
+
+def main():
+    cadena = "hola mundo"
+    centrada = centrar_cadena(cadena, 40)
+    print(centrada)
+    capitalizada = capitalizar_cadena(cadena)
+    print(capitalizada)
+
+if __name__=='__main__': 
+    main()
