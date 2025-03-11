@@ -1,0 +1,25 @@
+import random
+import string
+import math
+
+# Recursive functions
+def factorial(n, depth=1):
+    if n == 1: # The base case
+        #print('\t' * depth, 'Returning 1')
+        return 1
+    else: # The recursive part
+        #print('\t' * depth, 'Recursively calling factorial(', n - 1, ')')
+        result = n * factorial(n - 1, depth + 1)
+        #print('\t' * depth, 'Returning:', result)
+        return result
+       
+
+def main():
+    print('Calling factorial( 12 )')
+    print(factorial(6))
+    factorial_var = factorial(12)
+    print(factorial_var)
+
+
+if __name__=='__main__': 
+    main()
